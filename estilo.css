@@ -1,0 +1,40 @@
+
+/*INICIO*/
+
+/*INICIO PARCIAL 1*/
+
+/*INICIO PARCIAL 2*/
+
+/*INICIO PARCIAL 3*/
+
+/*---------------------*/
+
+/*PROYECTO 1 / PRIMER PARCIAL */
+
+/*PROYECTO 2 / PRIMER PARCIAL */
+.practica1 {
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+
+.fondoTabla{
+  background-color: transparent;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+}
+
+
+
+
+/*
+op 1:
+background-color: rgb(2, 0, 36);
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 0.5509259259259259) 46%, rgba(0, 212, 255, 1) 100%);
+op 2:   
+background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+op 3: 
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+*/

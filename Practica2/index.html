@@ -13,20 +13,23 @@
 
     <title>Practica 2</title>
   </head>
-  <body>
-    <h3>Hey</h3>
+  <body class="practica1"> 
+    <div class="container-fluid" style="margin-top: 20px;">
+      <h3>Información del navegador</h3>
+    </div>
+    
 
-    <div class="container-fluid">
+    <div class="container-fluid " style="margin-top: 20px; border-style: solid; border-color: red;">
       <div class="row">
-        <div class="col-12">
+        <div class="col-6" style="display: flex; justify-content: center; border-style: solid; border-color: rgb(10, 74, 134);">
           <button class="btn btn-primary" onclick="obtenerDatos()">Obtener datos del navegador</button>
         </div>
-        <div class="col-12">
-          <ul id="navegador">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <div class="col-6" style="border-style: solid; border-color: darkgreen;">
+          <ul id="navegador" class="list-group-flush" style="background-color: transparent;">
+            <li class="list-group-item fondoTabla"></li>
+            <li class="list-group-item fondoTabla"></li>
+            <li class="list-group-item fondoTabla"></li>
+            <li class="list-group-item fondoTabla"></li>
           </ul>
         </div>
       </div>
