@@ -1,5 +1,104 @@
-
 /*INICIO*/
+.cabecera {
+  background: rgb(43, 113, 173);
+  background: linear-gradient(170deg, rgba(43, 113, 173, 1) 0%, rgba(3, 37, 54, 0.311659698058911) 94%, rgba(219, 227, 231, 1) 100%);
+}
+
+.bodyInicio {
+  background-image: url("./image/F-BK-01.jpg");
+}
+
+.letrasBlancas {
+  color: rgb(255, 244, 246);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.centraCard {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.letrasGlobal {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.btn-PrimerParcial {
+  background-image: linear-gradient(to right, #1D2B64 0%, #F8CDDA 51%, #1D2B64 100%)
+}
+
+.btn-PrimerParcial {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-PrimerParcial:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.transparenteBoton{
+  background-color: rgba(190, 221, 233, 0.116)
+}
+
+
+.btn-SegundoParcial {background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%)}
+.btn-SegundoParcial {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-SegundoParcial:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ 
+ .btn-TercerParcial {background-image: linear-gradient(to right, #085078 0%, #85D8CE  51%, #085078  100%)}
+ .btn-TercerParcial {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-TercerParcial:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+
+
 
 /*INICIO PARCIAL 1*/
 
@@ -17,7 +116,7 @@
 }
 
 
-.fondoTabla{
+.fondoTabla {
   background-color: transparent;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
