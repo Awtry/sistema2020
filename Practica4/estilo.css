@@ -1,0 +1,40 @@
+.fondoGeneral {
+    background-image: url("./image/BK-01.jpg");
+}
+
+.cabeceraFondo {
+    background: rgb(16, 40, 38);
+    background: linear-gradient(180deg, rgba(16, 40, 38, 1) 30%, rgba(191, 216, 227, 0) 59%, rgba(23, 36, 42, 0) 73%);
+}
+
+.letrasBlancas {
+    color: rgb(255, 244, 246);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cetrarConteido{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.btn-unico {background-image: linear-gradient(to right, #780206 0%, #061161  51%, #780206  100%)}
+.btn-unico {
+   margin: 10px;
+   padding: 15px 45px;
+   font-family: 'Montserrat', sans-serif;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-unico:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }

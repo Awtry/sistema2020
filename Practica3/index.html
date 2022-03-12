@@ -18,7 +18,14 @@
   </head>
   <body class="fondoGeneral">
     <div class="jumbotron cabeceraPrincipal letrasBlancas" style="background-color: transparent;">
-      <h1>Bienvenido, conoce tus coordnadas</h1>
+      <div class="row">
+        <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
+          <h5 class="redondeo" ><a style="color: black;" href="../index.html">Regresar</a></h5>
+        </div>
+        <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10">
+          <h1>Bienvenido, conoce tus coordnadas</h1>
+        </div>
+      </div>
     </div>
 
     <div class="container-fluid">
@@ -26,7 +33,7 @@
         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 cetrarConteido">
           <button class="btn-location" onclick="getLocation()">¡Dale!</button>
         </div>
-        <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+        <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" style="margin-top: 20px;">
           <h5 class="letrasBlancas" id="mapa"></h5>
         </div>
       </div>
