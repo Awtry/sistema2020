@@ -13,11 +13,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-    <title>Practica 5</title>
+    <title>Practica 6</title>
   </head>
   <body class="fondoGeneral">
     <div class="container-fluid">
-          <div id="map"></div>
+      <div id="map"></div>
     </div>
 
     <script>
@@ -37,17 +37,36 @@
         const map = new google.maps.Map(document.getElementById("map"), propiedades);
 
         var icono = {
-            url: "https://media.giphy.com/media/2NJkigfPiu2dmpZg99/giphy.gifss",
-            scaledSize: new google.maps.Size(50,50),
-            origin: new google.maps.Point(0,0),
-            anchor: new google.maps.Point(0,0)
-        }
+          url: "https://media.giphy.com/media/2NJkigfPiu2dmpZg99/giphy.gifss",
+          scaledSize: new google.maps.Size(50, 50),
+          origin: new google.maps.Point(0, 0),
+          anchor: new google.maps.Point(0, 0),
+        };
 
         var marker = new google.maps.Marker({
-            position: coordenadas,
-            icon: icono,
-            map: map
+          position: coordenadas,
+          icon: icono,
+          map: map,
         });
+
+        if (navigator.geolocation) {
+          setInterval(() => {
+            moverPosicion(marker);
+          }, 5000);
+        }
+
+        function moverPosicion(marker) {
+          navigator.geolocation.getCurrentPosition((posicion) => {
+            var pos = {
+              lat: posicion.coords.latitude,
+              lng: posicion.coords.longitude,
+            };
+
+            marker.setPosition(pos);
+            map.panTo(pos);
+            map.setCenter(pos);
+          });
+        }
       }
     </script>
 
