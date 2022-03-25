@@ -10,7 +10,7 @@ fetch("datosGlobales.json")
         let contador = 1
         datos.forEach( registro => {
             let renglon = document.createElement("div")
-            renglon.className = "row border bg-light";
+            renglon.className = "row border bg-light m-2";
             paises.appendChild(renglon);
 
             let columna = document.createElement("div")
@@ -18,7 +18,7 @@ fetch("datosGlobales.json")
             renglon.appendChild(columna);
 
             let nombre = document.createElement("p")
-            nombre.textContent = contador + " " + registro.CountryName
+            nombre.textContent = contador + " -> " + registro.CountryName;
             columna.appendChild(nombre);
 
             contador ++
