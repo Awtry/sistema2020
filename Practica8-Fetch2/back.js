@@ -4,9 +4,10 @@ fetch("https://sistemasgeo.com/2022/fetch/paises.json")
 .then( results => {
     console.log(response)
 
-    let contador = 1
+    
 
-    response.json().then(function (datos) {
+    response.json().then(datos => {
+        let contador = 1
         datos.forEach( registro => {
             let renglon = document.createElement("div")
             renglon.className = "row border bg-light";
