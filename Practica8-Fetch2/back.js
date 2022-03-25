@@ -1,7 +1,7 @@
 var paises = document.getElementById("paises");
 
 fetch("datosGlobales.json")
-.then( results => {
+.then( response => {
     console.log(response)
 
     
@@ -11,11 +11,11 @@ fetch("datosGlobales.json")
         datos.forEach( registro => {
             let renglon = document.createElement("div")
             renglon.className = "row border bg-light";
-            paises.appendChil(renglon);
+            paises.appendChild(renglon);
 
             let columna = document.createElement("div")
             renglon.className = "col-12";
-            renglon.appendChil(columna);
+            renglon.appendChild(columna);
 
             let nombre = document.createElement("p")
             nombre.textContent = contador + " " + registro.CountryName
