@@ -1,0 +1,25 @@
+.fondoGeneral {
+    background-image: url("./image/BK-01.jpg");
+}
+
+.cabeceraFondo {
+    background: rgb(16, 40, 38);
+    background: linear-gradient(180deg, rgba(16, 40, 38, 1) 30%, rgba(191, 216, 227, 0) 59%, rgba(23, 36, 42, 0) 73%);
+}
+
+.letrasBlancas {
+    color: rgb(255, 244, 246);
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    border: 5px;
+    background-color: rgb(177, 233, 221);
+}
+
+container {
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+#map {width: 100%; height: 100%;height: 100%;}
