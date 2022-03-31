@@ -1,8 +1,8 @@
 var paises = document.getElementById("paises");
 
 fetch("datos.json")
-.then( results => {
-    console.log(response)
+.then( response => {
+    
 
     response.json().then(function (datos) {
         datos.forEach( registro => {
