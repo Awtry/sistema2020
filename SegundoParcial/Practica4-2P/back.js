@@ -22,6 +22,7 @@ function inciarMapa() {
 
     fetch('https://sistemasgeo.com/2022/fetch/paises.json')
         .then(response => {
+            mode: no-cors
             response.json().then(datos => {
                 const map = new google.maps.Map(document.getElementById("map"), propiedades);
                 console.log(datos);
