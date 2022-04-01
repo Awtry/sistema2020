@@ -1,5 +1,5 @@
 .fondoGeneral {
-    background-image: url("./image/BK-01.jpg");
+    background-image: url("./../../image/F-BK-03.jpeg");
 }
 
 .cabeceraFondo {
@@ -21,3 +21,12 @@ html.body{
     margin: 0px;
     padding: 0px;
 }
+
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(243, 234, 223, 0.644);
+}
+
+

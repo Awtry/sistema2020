@@ -2,12 +2,10 @@ var paises = document.getElementById("paises");
 
 fetch("datos.json")
 .then( response => {
-    
-
     response.json().then(function (datos) {
         datos.forEach( registro => {
-            let nombre = document.createElement("p");
-            nombre.textContent = "País: " + registro.country + ", casos " + registro.cases
+            var nombre = document.createElement("p");
+            nombre.textContent = "\n País: " + registro.country + "\n, casos:  " + registro.cases + "\t \n"
             paises.appendChild(nombre);
         })
     })
