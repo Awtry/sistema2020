@@ -57,7 +57,7 @@ function inciarMapa() {
         marcadores.push(marcador);
     });
 
-    var markerCluster = new MarkerCluster(map, marcadores, {
+    var markerCluster = new MarkerClusterer(map, marcadores, {
         imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m',
         gridSize: 60,
         zoomClick: true,
