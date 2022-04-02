@@ -1,5 +1,3 @@
-var map;
-
 var coordenadas = {
   lat: 0,
   lng: 0,
@@ -23,7 +21,7 @@ function iniciaMapa() {
   fetch('https://sistemasgeo.com/2022/fetch/paises.json')
     .then((response) => {
       response.json().then((datos) => {
-        const map = new google.maps.Map(document.getElementById("map"), propiedades);
+        const map = new google.maps.Map(document.getElementById("mapa"), propiedades);
         console.log(datos);
         datos.forEach((marcador) => {
           console.log(marcador);
