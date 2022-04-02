@@ -59,8 +59,8 @@ function iniciaMapa() {
 
     var markerCluster = new MarkerClusterer(map, marcadores, {
         imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m',
-        //gridSize: 60,
-        //zoomClick: true,
+        gridSize: 60,
+        zoomClick: true,
         maxZoom: 10
     });
 
