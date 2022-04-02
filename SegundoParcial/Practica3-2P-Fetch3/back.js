@@ -9,7 +9,7 @@ var propiedades = {
     zoom: 2,
 }
 
-function inciarMapa() {
+function iniciaMapa() {
     const map = new google.maps.Map(document.getElementById("map"), propiedades);
 
     const marcadores = obtieneMarcadores();

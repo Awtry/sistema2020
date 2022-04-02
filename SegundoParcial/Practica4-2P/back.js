@@ -10,7 +10,7 @@ var propiedades = {
     zoom: 20,
 };
 
-function inciarMapa() {
+function iniciaMapa() {
     /*
     var icono = {
         url: "https://media.giphy.com/media/2NJkigfPiu2dmpZg99/giphy.gif",

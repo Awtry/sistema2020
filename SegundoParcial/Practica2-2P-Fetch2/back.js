@@ -4,13 +4,11 @@ fetch("datosGlobales.json")
 .then( response => {
     console.log(response)
 
-    
-
     response.json().then(datos => {
         let contador = 1
         datos.forEach( registro => {
             let renglon = document.createElement("div")
-            renglon.className = "row border bg-light m-2";
+            renglon.className = "row border bg-light text-dark m-2";
             paises.appendChild(renglon);
 
             let columna = document.createElement("div")
