@@ -20,7 +20,7 @@ function iniciaMapa() {
     };
     */
 
-  fetch("https://sistemasgeo.com/2022/fetch/paises.json")
+  fetch('https://sistemasgeo.com/2022/fetch/paises.json')
     .then((response) => {
       response.json().then((datos) => {
         const map = new google.maps.Map(document.getElementById("map"), propiedades);
