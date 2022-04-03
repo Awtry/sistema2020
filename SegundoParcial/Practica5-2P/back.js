@@ -67,7 +67,7 @@ function iniciaMapa() {
 
         cuenta++;
 
-        marcadores.push(marcador);
+        marcadores.push(marker);
       });
     });
   });
@@ -78,16 +78,6 @@ function iniciaMapa() {
     let marcador = new google.maps.Marker({
       map: map,
       position: localidad,
-    });
-
-    var informacion = "<div class=" + "container-fluid";
-
-    var infowindow = new google.maps.InfoWindow({
-      content: informacion,
-    });
-
-    marcador.addListener("mouseover", function () {
-      infowindow.open(map, marcador);
     });
 
     cuenta++;
