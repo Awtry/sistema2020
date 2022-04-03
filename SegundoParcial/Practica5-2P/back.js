@@ -67,6 +67,7 @@ function iniciaMapa() {
         });
         cuenta++;
         marcadores.push(marcador);
+        console.log("Marcador: " + cuenta + " , valor" + marcadores[cuenta])
       });
     });
   });
