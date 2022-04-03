@@ -36,11 +36,10 @@ var propiedades = {
   zoom: 3,
 };
 
-var map; 
+var map;
 
 function iniciaMapa() {
   var marcadores = [];
-
   var cuenta = 1;
 
   fetch("./Paises.json").then((response) => {
@@ -60,15 +59,13 @@ function iniciaMapa() {
         let marcador = new google.maps.Marker({
           map: map,
           position: new google.maps.LatLng(lugar.Latitud, lugar.Longitud),
-          title: lugar.NombreLugar,
+          label: lugar.NombreLugar,
         });
 
         marcador.addListener("click", function () {
           infowindow.open(map, marcador);
         });
-
         cuenta++;
-
         marcadores.push(marcador);
       });
     });
@@ -76,8 +73,8 @@ function iniciaMapa() {
 
   var markerCluster = new MarkerClusterer(map, marcadores, {
     imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-    gridSize: 60,
-    zoomClick: true,
+    //gridSize: 60,
+    //zoomClick: true,
     maxZoom: 10,
   });
 
