@@ -14,6 +14,7 @@ var map;
 function iniciarMapa() {
   var marcadores = [];
   var cuenta = 1;
+  var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
   fetch("./Paises.json").then((response) => {
     console.log(response);
@@ -32,7 +33,7 @@ function iniciarMapa() {
         const marcador = new google.maps.Marker({
           map: map,
           position: new google.maps.LatLng(lugar.Latitud, lugar.Longitud),
-          label: lugar.NombreLugar,
+          label: labels[cuenta % labels.length]
         });
 
         marcador.addListener("click", function () {
@@ -46,12 +47,12 @@ function iniciarMapa() {
     });
   });
 
-  const markerCluster = new MarkerClusterer(marcadores, map, {
-    imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+  var markerCluster = new MarkerClusterer(map, marcadores, {
+    imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m',
     //gridSize: 60,
     //zoomClick: true,
-    maxZoom: 10,
-  });
+    maxZoom: 10
+});
 
   document.getElementById("btnroadmap").addEventListener("click", function () {
     map.setMapTypeId("terrain");
