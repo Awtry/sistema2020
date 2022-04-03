@@ -9,34 +9,37 @@ var propiedades = {
 };
 
 function iniciaMapa() {
-  /*
-    var icono = {
-        url: "https://media.giphy.com/media/2NJkigfPiu2dmpZg99/giphy.gif",
-        scaledSize: new google.maps.Size(50, 50),
-        origin: new google.maps.Point(0, 0),
-        anchor: new google.maps.Point(0, 0),
-    };
-    */
-
-  fetch('./paises.json')
+  fetch("./paises.json")
     .then((response) => {
-      console.log(response)
+      console.log(response);
       response.json().then((datos) => {
         const map = new google.maps.Map(document.getElementById("mapa"), propiedades);
         console.log(datos);
         datos.forEach((marcador) => {
           console.log(marcador);
-          var informacion = "<strong>País: </strong>" + marcador.CountryName;
-          var infoWindow = new google.maps.infoWindow({
+
+          var informacion = "<strong>País:</strong>" + marcador.CountryName;
+
+          var infowindow = new google.maps.InfoWindow({
             content: informacion,
           });
+
+          var icono = {
+            url: "https://media.giphy.com/media/2NJkigfPiu2dmpZg99/giphy.gif",
+            scaledSize: new google.maps.Size(50, 50),
+            origin: new google.maps.Point(0, 0),
+            anchor: new google.maps.Point(0, 0),
+          };
+
           let marker = new google.maps.Marker({
             map: map,
             position: new google.maps.LatLng(marcador.CapitalLatitude, marcador.CapitalLongitude),
+            icon: icono,
             title: marcador.CountryName,
           });
+
           marker.addListener("click", function () {
-            infoWindow.open(map, marker);
+            infowindow.open(map, marker);
           });
         });
       });
