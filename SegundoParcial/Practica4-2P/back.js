@@ -18,7 +18,7 @@ function iniciaMapa() {
     };
     */
 
-  fetch('https://sistemasgeo.com/2022/fetch/paises.json', { mode: 'no-cors'})
+  fetch('./paises.json')
     .then((response) => {
       console.log(response)
       response.json().then((datos) => {
