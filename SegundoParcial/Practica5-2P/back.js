@@ -1,14 +1,14 @@
 
 var localidades = [
-    {lat:  19.3327940, lng: -99.2125548}, //CDMX B
-    {lat: 20.680933,  lng: -103.462491}, //GDL C
-    {lat:  21.161728, lng: -101.686310}, //LEON D
-    {lat:  41.4981238 , lng: 2.1567566}, //ESPAÑA E
-    {lat: 25.689432, lng:  -100.317024}, //MONTERREY F 
-    {lat: 41.890540, lng: 12.493813},//ITALIA G
-    {lat: 36.161218, lng: -115.146309},// LAS VEGAS H
-    {lat: -22.904173, lng: -43.172127},//RIO DE JANEIRO I
-    {lat: -34.616385, lng: -58.381344},// ARGENTINA J
+    {lat:  19.3327940, lng: -99.2125548, Nombre: "CDMX"}, //CDMX B
+    {lat: 20.680933,  lng: -103.462491, Nombre: "Guadalajara"}, //GDL C
+    {lat:  21.161728, lng: -101.686310, Nombre: "León"}, //LEON D
+    {lat:  41.4981238 , lng: 2.1567566, Nombre: "España "}, //ESPAÑA E
+    {lat: 25.689432, lng:  -100.317024, Nombre: "Monterrey"}, //MONTERREY F 
+    {lat: 41.890540, lng: 12.493813, Nombre: "Italia"},//ITALIA G
+    {lat: 36.161218, lng: -115.146309, Nombre: "Las Vegas"},// LAS VEGAS H
+    {lat: -22.904173, lng: -43.172127, Nombre: "Rio de Janeiro"},//RIO DE JANEIRO I
+    {lat: -34.616385, lng: -58.381344, Nombre: "Argentina"},// ARGENTINA J
     {lat: 35.683730, lng: 139.767327}, //TOKYO K
     {lat: 55.756816, lng: 37.617790},//RUSIA L
     {lat: 31.229804, lng: 121.466993},//CHINA M
@@ -50,6 +50,16 @@ function iniciaMapa() {
             map: map,
             position: localidad,
             label: labels[cuenta % labels.length]
+        });
+
+        var informacion = "<strong>País:</strong>" + localidad.Nombre;
+
+        var infowindow = new google.maps.InfoWindow({
+          content: informacion,
+        });
+
+        marcador.addListener("click", function() {
+            infowindow.open(map, marker);
         });
 
         cuenta++;
