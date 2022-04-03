@@ -13,6 +13,7 @@ var map;
 
 function iniciarMapa() {
   var marcadores = [];
+  var separador = [];
   var cuenta = 0;
   var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
@@ -33,9 +34,12 @@ function iniciarMapa() {
         });
 
         debugger;
+        separador.push({lat: lugar.Latitud, lng: lugar.Longitud})
+
+        debugger;
         const marcador = new google.maps.Marker({
           map: map,
-          position: {lat: lugar.Latitud, lng: lugar.Longitud},
+          position: new google.maps.LatLng(separador.lat, separador.lng),
           label: labels[cuenta % labels.length]
         });
 
