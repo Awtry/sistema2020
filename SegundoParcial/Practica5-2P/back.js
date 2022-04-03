@@ -12,7 +12,7 @@ var propiedades = {
 
 var map;
 
-function iniciaMapa() {
+function iniciarMapa() {
   var marcadores = [];
   var cuenta = 1;
 
