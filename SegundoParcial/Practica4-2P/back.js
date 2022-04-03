@@ -25,7 +25,7 @@ function iniciaMapa() {
           });
 
           var icono = {
-            url: "https://media.giphy.com/media/hluk8ED9boLefQZFWg/giphy.gif",
+            url: "https://media.giphy.com/media/eDXdPWRPMKeo1VNYU1/giphy.gif",
             scaledSize: new google.maps.Size(50, 50),
             origin: new google.maps.Point(0, 0),
             anchor: new google.maps.Point(0, 0),

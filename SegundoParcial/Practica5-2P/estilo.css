@@ -1,27 +1,34 @@
 .fondoGeneral {
-    background-color: #FBAB7E;
-    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-    
-}
+    background: #076585;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fff, #076585);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fff, #076585);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-.cabeceraFondo {
-    background: rgb(16, 40, 38);
-    background: linear-gradient(180deg, rgba(16, 40, 38, 1) 30%, rgba(191, 216, 227, 0) 59%, rgba(23, 36, 42, 0) 73%);
+
 }
 
 .letrasBlancas {
-    color: rgb(255, 244, 246);
+    color: rgb(26, 14, 16);
     font-family: 'Montserrat', sans-serif;
 }
 
-p{
+p {
     border: 5px;
     background-color: rgb(177, 233, 221);
 }
 
-.sinBordes{
-    margin: 0;
-    padding: 0;
+.bordeRastreo {
+    border-style: solid;
+    border-color: black;
+}
+
+.centrarObjeto {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 #mapa {
@@ -34,3 +41,98 @@ html, body {
     padding: 0;
 }
 
+
+.btn-UNO {
+    background-image: linear-gradient(to right, #000000 0%, #53346D 51%, #000000 100%)
+}
+
+.btn-UNO {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-UNO:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.btn-DOS {
+    background-image: linear-gradient(to right, #73C8A9 0%, #373B44 51%, #73C8A9 100%)
+}
+
+.btn-DOS {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-DOS:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.btn-TRES {
+    background-image: linear-gradient(to right, #948E99 0%, #2E1437 51%, #948E99 100%)
+}
+
+.btn-TRES {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-TRES:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.btn-CUATRO {
+    background-image: linear-gradient(to right, #136a8a 0%, #267871 51%, #136a8a 100%)
+}
+
+.btn-CUATRO {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-CUATRO:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}

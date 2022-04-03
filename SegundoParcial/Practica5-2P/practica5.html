@@ -16,11 +16,11 @@
     <title>Practica 5</title>
   </head>
   <body class="fondoGeneral">
-    <div class="jumbotron cabeceraPrincipal letrasBlancas" style="background-color: transparent">
+    <div class="container-fluid cabeceraPrincipal letrasBlancas" style="background-color: transparent">
       <div class="row">
         <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
           <h5 class="redondeo">
-            <a style="color: whitesmoke" href="../../index.html">Regresar</a>
+            <a style="color: rgb(40, 35, 35)" href="../../index.html">Regresar</a>
           </h5>
         </div>
         <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10">
@@ -31,21 +31,26 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 ">
           <div id="mapa"></div>
         </div>
-        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
-          <button class="btn btn-primary" id="btnroadmap">roadmap</button>
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 ">
+          <div class="row m-2">
+            <div class="col-12  centrarObjeto ">
+              <button class="btn-UNO" id="btnroadmap">roadmap</button>
+            </div>
+            <div class="col-12  centrarObjeto">
+              <button class="btn-DOS" id="btnsatellite">satellite</button>
+            </div>
+            <div class="col-12  centrarObjeto">
+              <button class="btn-TRES" id="btnhybrid">hybrid</button>
+            </div>
+            <div class="col-12  centrarObjeto">
+              <button class="btn-CUATRO" id="btnterrain">terrain</button>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
-          <button class="btn btn-warning" id="btnsatellite">satellite</button>
-        </div>
-        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
-          <button class="btn btn-danger" id="btnhybrid">hybrid</button>
-        </div>
-        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
-          <button class="btn btn-success" id="btnterrain">terrain</button>
-        </div>
+      
 
       </div>
     </div>
