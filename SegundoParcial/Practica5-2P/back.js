@@ -36,6 +36,8 @@ var propiedades = {
   zoom: 3,
 };
 
+var map; 
+
 function iniciaMapa() {
   var marcadores = [];
 
@@ -44,7 +46,7 @@ function iniciaMapa() {
   fetch("./Paises.json").then((response) => {
     console.log(response);
     response.json().then((lugares) => {
-      var map = new google.maps.Map(document.getElementById("mapa"), propiedades);
+      map = new google.maps.Map(document.getElementById("mapa"), propiedades);
       console.log(lugares);
 
       lugares.forEach((marcador) => {
