@@ -1,0 +1,164 @@
+[
+    {
+        "NombreLugar": "Jalisco",
+        "Capital": "Guadalajara",
+        "Habitantes": "8,348,151",
+        "Latitud": "20.677727734244108",
+        "Longitud": "-103.34719642031556",
+        "Pais": "Mexico"
+    },
+    {
+        "NombreLugar": "Guanajuato",
+        "Capital": "Guanajuato",
+        "Habitantes": "6,166,934",
+        "Latitud": "21.019065934273026",
+        "Longitud": "-101.25990485067365",
+        "Pais": "Mexico"
+    },
+    {
+        "NombreLugar": "Quintana Roo",
+        "Capital": "Chetumal",
+        "Habitantes": "2,822,255",
+        "Latitud": "18.519678113068952",
+        "Longitud": "-88.30427915165697",
+        "Pais": "Mexico"
+    },
+    {
+        "NombreLugar": "San Luis Potosí",
+        "Capital": "San Luis Potosí",
+        "Habitantes": "1,857,985",
+        "Latitud": "22.152974511140922",
+        "Longitud": "-100.97419813588365",
+        "Pais": "Mexico"
+    },
+    {
+        "NombreLugar": "Estado de México",
+        "Capital": "Toluca de Lerdo",
+        "Habitantes": "16,992,418",
+        "Latitud": "19.434598014348513",
+        "Longitud": "-99.13229937530654",
+        "Pais": "Mexico"
+    },
+    {
+        "NombreLugar": "Quebec",
+        "Capital": "Quebec",
+        "Habitantes": "8,018,800",
+        "Latitud": "51.83508804888033",
+        "Longitud": "-73.17613404486234",
+        "Pais": "Canadá"
+    },
+    {
+        "NombreLugar": "Nunavut",
+        "Capital": "Iqaluit",
+        "Habitantes": "33,000",
+        "Latitud": "66.23410390445264",
+        "Longitud": "-92.66039920550914",
+        "Pais": "Canadá"
+    },
+    {
+        "NombreLugar": "Ontario",
+        "Capital": "Toronto",
+        "Habitantes": "16,711,229",
+        "Latitud": "51.78751473814905",
+        "Longitud": "-86.53127946534015",
+        "Pais": "Canadá"
+    },
+    {
+        "NombreLugar": "República de Adigueya",
+        "Capital": "Maikop",
+        "Habitantes": "453,376",
+        "Latitud": "44.85360488612901",
+        "Longitud": "40.16636347028925",
+        "Pais": "Rusia"
+    },
+    {
+        "NombreLugar": "República de Altái",
+        "Capital": "Gorno-Altaisk",
+        "Habitantes": "218,063",
+        "Latitud": "50.8824667614874",
+        "Longitud": "87.0073017710469",
+        "Pais": "Rusia"
+    },
+    {
+        "NombreLugar": "Gales",
+        "Capital": "Cardiff",
+        "Habitantes": "3,153,000",
+        "Latitud": "52.14335372001943",
+        "Longitud": "-3.9301463802184853",
+        "Pais": "Reino Unido"
+    },
+    {
+        "NombreLugar": "Inglaterra",
+        "Capital": "Londres",
+        "Habitantes": "51,383,000",
+        "Latitud": "51.507139395847304",
+        "Longitud": "-0.16941769507121462",
+        "Pais": "Reino Unido"
+    },
+    {
+        "NombreLugar": "Andalucía",
+        "Capital": "Sevilla",
+        "Habitantes": "8,476,718",
+        "Latitud": "37.857992668410546",
+        "Longitud": "-5.449403877944405",
+        "Pais": "España"
+    },
+    {
+        "NombreLugar": "Hokkaido",
+        "Capital": "Sapporo",
+        "Habitantes": "5,250,000",
+        "Latitud": "43.29276354719014",
+        "Longitud": "141.3629892582948",
+        "Pais": "Japón"
+    },
+    {
+        "NombreLugar": "Tohoku",
+        "Capital": "Sendai",
+        "Habitantes": "9,020,531",
+        "Latitud": "38.9152952873171",
+        "Longitud": "140.81223597539187",
+        "Pais": "Japón"
+    },
+    {
+        "NombreLugar": "Kyushu",
+        "Capital": "Fukuoka",
+        "Habitantes": "5,250,000",
+        "Latitud": "33.602706332334364",
+        "Longitud": "130.37870378527987",
+        "Pais": "Japón"
+    },
+    {
+        "NombreLugar": "Kinki",
+        "Capital": "Osaka",
+        "Habitantes": "22,757,897",
+        "Latitud": "34.70689514325377",
+        "Longitud": "135.5277978270471",
+        "Pais": "Japón"
+    },
+    {
+        "NombreLugar": "Territorio de la Capital Australiana",
+        "Capital": "Canberra",
+        "Habitantes": "395,200",
+        "Latitud": "-35.299003583908934",
+        "Longitud": "148.96288102514845",
+        "Pais": "Australia"
+    },
+    {
+        "NombreLugar": "Nueva Gales del Sur",
+        "Capital": "Sídney",
+        "Habitantes": "7,704,300",
+        "Latitud": "-33.850962817084415",
+        "Longitud": "150.7459363146834",
+        "Pais": "Australia"
+    },
+    {
+        "NombreLugar": "Victoria",
+        "Capital": "Melbourne",
+        "Habitantes": "6,039,100",
+        "Latitud": "-37.76175776517865",
+        "Longitud": "145.10124930571152",
+        "Pais": "Australia"
+    }
+]
+
+
