@@ -5,7 +5,7 @@ var coordenadas = {
 
 var propiedades = {
   center: coordenadas,
-  zoom: 20,
+  zoom: 2,
 };
 
 function iniciaMapa() {
@@ -25,7 +25,7 @@ function iniciaMapa() {
           });
 
           var icono = {
-            url: "https://media.giphy.com/media/2NJkigfPiu2dmpZg99/giphy.gif",
+            url: "https://media.giphy.com/media/1H7wK6RCCExDMaSS1g/giphy.gif",
             scaledSize: new google.maps.Size(50, 50),
             origin: new google.maps.Point(0, 0),
             anchor: new google.maps.Point(0, 0),
