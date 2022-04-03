@@ -1,4 +1,3 @@
-import { MarkerClusterer } from "@googlemaps/markerclusterer";
 
 var coordenadas = {
   lat: 21.161728,
