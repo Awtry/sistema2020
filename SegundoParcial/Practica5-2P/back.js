@@ -19,12 +19,14 @@ function iniciarMapa() {
   fetch("./Paises.json").then((response) => {
     console.log(response);
     response.json().then((lugares) => {
-      map = new google.maps.Map(document.getElementById("mapa"), propiedades);
+      
       console.log(lugares);
 
       lugares.forEach((lugar) => {
         console.log(lugar);
 
+        map = new google.maps.Map(document.getElementById("mapa"), propiedades);
+        
         var infoWindowContent = '<div class="info_content">' + "<h5><striong> Nombre: </strong></h5>" + "<p>" + lugar.NombreLugar + "</p> <br>" + "<h5><striong> Capital: </strong></h5>" + "<p>" + lugar.Capital + "</p> <br>" + "<h5><striong> Habitantes: </strong></h5>" + "<p>" + lugar.Habitantes + "</p> <br>" + "<h5><striong> País: </strong></h5>" + "<p>" + lugar.Pais + "</p> <br>" + "</div>";
         var infowindow = new google.maps.InfoWindow({
           content: infoWindowContent,
@@ -42,7 +44,7 @@ function iniciarMapa() {
         
         cuenta++;
         
-        console.log("Marcador: " + cuenta + " , valor" + marcadores[cuenta].marcador);
+        console.log("Marcador: " + cuenta + " , valor" + marcadores[cuenta]);
 
         marcadores.push(marcador);
       });
