@@ -63,7 +63,7 @@ function iniciaMapa() {
           title: lugar.NombreLugar,
         });
 
-        marker.addListener("click", function () {
+        marcador.addListener("click", function () {
           infowindow.open(map, marcador);
         });
 
