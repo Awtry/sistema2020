@@ -35,7 +35,7 @@ function iniciarMapa() {
         debugger;
         const marcador = new google.maps.Marker({
           map: map,
-          position: new google.maps.LatLng(lugar.Latitud, lugar.Longitud),
+          position: {lat: lugar.Latitud, lng: lugar.Longitud},
           label: labels[cuenta % labels.length]
         });
 
@@ -51,6 +51,7 @@ function iniciarMapa() {
     });
   });
 
+  debugger;
   var makerCluster = new MarkerClusterer(map, marcadores, {
     imagePath : 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m',
     maxZoom: 10
