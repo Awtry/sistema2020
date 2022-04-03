@@ -36,7 +36,7 @@ var propiedades = {
   zoom: 3,
 };
 
-var map;
+var mapita;
 
 function iniciaMapa() {
   var marcadores = [];
@@ -45,7 +45,7 @@ function iniciaMapa() {
   fetch("./Paises.json").then((response) => {
     console.log(response);
     response.json().then((lugares) => {
-      map = new google.maps.Map(document.getElementById("mapa"), propiedades);
+      mapita = new google.maps.Map(document.getElementById("mapa"), propiedades);
       console.log(lugares);
 
       lugares.forEach((lugar) => {
@@ -57,22 +57,23 @@ function iniciaMapa() {
         });
 
         let marcador = new google.maps.Marker({
-          map: map,
+          map: mapita,
           position: new google.maps.LatLng(lugar.Latitud, lugar.Longitud),
-          label: lugar.NombreLugar,
+          
         });
 
         marcador.addListener("click", function () {
-          infowindow.open(map, marcador);
+          infowindow.open(mapita, marcador);
         });
+
         cuenta++;
         marcadores.push(marcador);
-        console.log("Marcador: " + cuenta + " , valor" + marcadores[cuenta])
+        console.log("Marcador: " + cuenta + " , valor" + marcadores[cuenta].NombreLugar)
       });
     });
   });
 
-  var markerCluster = new MarkerClusterer(map, marcadores, {
+  var markerCluster = new MarkerClusterer(mapita, marcadores, {
     imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
     //gridSize: 60,
     //zoomClick: true,

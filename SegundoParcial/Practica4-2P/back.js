@@ -15,6 +15,7 @@ function iniciaMapa() {
       response.json().then((datos) => {
         const map = new google.maps.Map(document.getElementById("mapa"), propiedades);
         console.log(datos);
+        
         datos.forEach((marcador) => {
           console.log(marcador);
 
