@@ -49,33 +49,25 @@ function iniciaMapa() {
 
       lugares.forEach((marcador) => {
         console.log(marcador);
-       
-        var infoWindowContent = [
-            ['<div class="info_content">' +
-            '<h5><striong> Nombre: </strong></h5>' +
-            '<p>' + marcador.NombreLugar + '</p> <br>' +
-            '<h5><striong> Capital: </strong></h5>' +
-            '<p>' + marcador.Capital + '</p> <br>' + 
-            '<h5><striong> Habitantes: </strong></h5>' +
-            '<p>' + marcador.Habitantes + '</p> <br>' +
-            '<h5><striong> País: </strong></h5>' +
-            '<p>' + marcador.Pais + '</p> <br>' +
-            '</div>']
-        ];
 
+        var infoWindowContent = '<div class="info_content">' + "<h5><striong> Nombre: </strong></h5>" + "<p>" + marcador.NombreLugar + "</p> <br>" + "<h5><striong> Capital: </strong></h5>" + "<p>" + marcador.Capital + "</p> <br>" + "<h5><striong> Habitantes: </strong></h5>" + "<p>" + marcador.Habitantes + "</p> <br>" + "<h5><striong> País: </strong></h5>" + "<p>" + marcador.Pais + "</p> <br>" + "</div>";
         var infowindow = new google.maps.InfoWindow({
-            content: infoWindowContent,
+          content: infoWindowContent,
         });
 
         let marker = new google.maps.Marker({
-            map: map,
-            position: new google.maps.LatLng(marcador.Latitud, marcador.Longitud),
-            title: marcador.NombreLugar,
-          });
-    
-          marker.addListener("mouseover", function () {
-            infowindow.open(map, marker);
-          });
+          map: map,
+          position: new google.maps.LatLng(marcador.Latitud, marcador.Longitud),
+          title: marcador.NombreLugar,
+        });
+
+        marker.addListener("click", function () {
+          infowindow.open(map, marker);
+        });
+
+        cuenta++;
+
+        marcadores.push(marcador);
       });
     });
   });
@@ -103,7 +95,6 @@ function iniciaMapa() {
     marcadores.push(marcador);
   });
 */
-  
 
   var markerCluster = new MarkerClusterer(map, marcadores, {
     imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
