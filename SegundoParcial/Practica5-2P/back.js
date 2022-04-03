@@ -41,18 +41,27 @@ function iniciarMapa() {
         });
         
         cuenta++;
+        
+        console.log("Marcador: " + cuenta + " , valor" + marcadores[cuenta].marcador);
+
         marcadores.push(marcador);
-        console.log("Marcador: " + cuenta + " , valor" + marcadores[cuenta])
       });
     });
   });
 
+  var makerCluster = new MarkerClusterer(map, marcadores, {
+    imagePath : 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m',
+    maxZoom: 10
+
+});
+  /*
   var markerCluster = new MarkerClusterer(map, marcadores, {
     imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m',
     gridSize: 60,
     zoomClick: true,
     maxZoom: 10
 });
+*/
 
   document.getElementById("btnroadmap").addEventListener("click", function () {
     map.setMapTypeId("terrain");
