@@ -50,7 +50,7 @@ function iniciaMapa() {
 
       lugares.forEach((marcador) => {
         console.log(marcador);
-        popup = new Popup(new google.maps.LatLng(-33.866, 151.196), document.getElementById("content"));
+        popup = new Popup(new google.maps.LatLng(marcador.Latitud , marcador.longitud), document.getElementById("content"));
         popup.setMap(mapa);
       });
     });
