@@ -49,18 +49,18 @@ function iniciaMapa() {
       map = new google.maps.Map(document.getElementById("mapa"), propiedades);
       console.log(lugares);
 
-      lugares.forEach((marcador) => {
-        console.log(marcador);
+      lugares.forEach((lugar) => {
+        console.log(lugar);
 
-        var infoWindowContent = '<div class="info_content">' + "<h5><striong> Nombre: </strong></h5>" + "<p>" + marcador.NombreLugar + "</p> <br>" + "<h5><striong> Capital: </strong></h5>" + "<p>" + marcador.Capital + "</p> <br>" + "<h5><striong> Habitantes: </strong></h5>" + "<p>" + marcador.Habitantes + "</p> <br>" + "<h5><striong> País: </strong></h5>" + "<p>" + marcador.Pais + "</p> <br>" + "</div>";
+        var infoWindowContent = '<div class="info_content">' + "<h5><striong> Nombre: </strong></h5>" + "<p>" + lugar.NombreLugar + "</p> <br>" + "<h5><striong> Capital: </strong></h5>" + "<p>" + lugar.Capital + "</p> <br>" + "<h5><striong> Habitantes: </strong></h5>" + "<p>" + lugar.Habitantes + "</p> <br>" + "<h5><striong> País: </strong></h5>" + "<p>" + lugar.Pais + "</p> <br>" + "</div>";
         var infowindow = new google.maps.InfoWindow({
           content: infoWindowContent,
         });
 
-        let marker = new google.maps.Marker({
+        let marcador = new google.maps.Marker({
           map: map,
-          position: new google.maps.LatLng(marcador.Latitud, marcador.Longitud),
-          title: marcador.NombreLugar,
+          position: new google.maps.LatLng(lugar.Latitud, lugar.Longitud),
+          title: lugar.NombreLugar,
         });
 
         marker.addListener("click", function () {
@@ -69,24 +69,10 @@ function iniciaMapa() {
 
         cuenta++;
 
-        marcadores.push(marker);
+        marcadores.push(marcador);
       });
     });
   });
-  /*
-  localidades.forEach((localidad) => {
-    console.log(localidad);
-
-    let marcador = new google.maps.Marker({
-      map: map,
-      position: localidad,
-    });
-
-    cuenta++;
-
-    marcadores.push(marcador);
-  });
-*/
 
   var markerCluster = new MarkerClusterer(map, marcadores, {
     imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
