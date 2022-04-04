@@ -39,7 +39,7 @@ function iniciarMapa() {
         debugger;
         const marcador = new google.maps.Marker({
           map: map,
-          position: separador,
+          position: new google.maps.LatLng(lugar.Latitud, lugar.Longitud),
           label: labels[cuenta % labels.length]
         });
 
