@@ -12,7 +12,7 @@ var propiedades = {
 var map;
 
 function iniciarMapa() {
-  var marcadores = [];
+  var markers = [];
   var separador = [];
   var cuenta = 0;
   var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -37,30 +37,26 @@ function iniciarMapa() {
         separador.push({lat: lugar.Latitud, lng: lugar.Longitud})
 
         debugger;
-        var marcador = new google.maps.Marker({
+        var marker = new google.maps.Marker({
           map: map,
           position: new google.maps.LatLng(lugar.Latitud, lugar.Longitud),
           label: labels[cuenta % labels.length]
         });
 
-        marcador.addListener("click", function () {
-          infowindow.open(map, marcador);
+        marker.addListener("click", function () {
+          infowindow.open(map, marker);
         });
         
         cuenta++;
         debugger;
-        marcadores.push(marcador);
-        console.log("Marcador: " + cuenta + " , valor" + marcadores[cuenta]);
+        markers.push(marker);
+        console.log("Marcador: " + cuenta + " , valor" + markers);
       });
     });
   });
 
   debugger;
-  var makerCluster = new MarkerClusterer(map, marcadores, {
-    imagePath : 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m',
-    maxZoom: 10
-
-});
+  var makerCluster = new MarkerClusterer(map, markers);
   /*
   var markerCluster = new MarkerClusterer(map, marcadores, {
     imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m',
