@@ -7,7 +7,7 @@ var coordenadas = {
 var propiedades = {
   center: coordenadas,
   zoom: 3,
-  mapTypeI: ['roadmap', 'satellite', 'hybrid', 'terrain', 'style_map']
+  mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain', 'style_map']
 };
 
 var map;
