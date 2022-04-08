@@ -1,6 +1,6 @@
 function iniciarMapa() {
 
-  var map = new google.maps.Map(document.getElementById("mapa"), propiedades);
+ 
 
   var coordenadas = {
     lat: 21.152639,
@@ -205,8 +205,10 @@ function iniciarMapa() {
   ], { name: "Mapa oscuro" });
 
   
+  var map = new google.maps.Map(document.getElementById("mapa"), propiedades);
 
   map.mapTypes.set("style_map", styledMap);
   map.setMapTypeId('style_map');
+
 
 }
