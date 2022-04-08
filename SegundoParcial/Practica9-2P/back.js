@@ -60,19 +60,18 @@ function iniciarMapa() {
       },
       {
         "featureType": "administrative.country",
-        "elementType": "labels.icon",
+        "elementType": "labels.text.fill",
         "stylers": [
           {
-            "color": "#cee042"
+            "color": "#c33737"
           }
         ]
       },
       {
-        "featureType": "administrative.country",
-        "elementType": "labels.text.fill",
+        "featureType": "administrative.land_parcel",
         "stylers": [
           {
-            "color": "#cee042"
+            "visibility": "off"
           }
         ]
       },
@@ -81,7 +80,7 @@ function iniciarMapa() {
         "elementType": "labels.text.fill",
         "stylers": [
           {
-            "color": "#d55353"
+            "color": "#bdbdbd"
           }
         ]
       },
@@ -90,7 +89,7 @@ function iniciarMapa() {
         "elementType": "labels.text.fill",
         "stylers": [
           {
-            "color": "#3fcaae"
+            "color": "#757575"
           }
         ]
       },
@@ -126,7 +125,7 @@ function iniciarMapa() {
         "elementType": "geometry.fill",
         "stylers": [
           {
-            "color": "#43ada0"
+            "color": "#84c238"
           }
         ]
       },
@@ -144,7 +143,7 @@ function iniciarMapa() {
         "elementType": "geometry",
         "stylers": [
           {
-            "color": "#a81515"
+            "color": "#cf4444"
           }
         ]
       },
@@ -153,7 +152,7 @@ function iniciarMapa() {
         "elementType": "geometry",
         "stylers": [
           {
-            "color": "#b3bd6b"
+            "color": "#78c4ce"
           }
         ]
       },
@@ -162,7 +161,7 @@ function iniciarMapa() {
         "elementType": "geometry",
         "stylers": [
           {
-            "color": "#d0cb95"
+            "color": "#4e4e4e"
           }
         ]
       },
@@ -171,7 +170,7 @@ function iniciarMapa() {
         "elementType": "labels.text.fill",
         "stylers": [
           {
-            "color": "#616161"
+            "color": "#c8e774"
           }
         ]
       },
