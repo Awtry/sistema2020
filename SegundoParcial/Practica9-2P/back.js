@@ -1,21 +1,19 @@
-
-var coordenadas = {
-  lat: 21.152639,
-  lng: -101.711598,
-};
-
-var propiedades = {
-  center: coordenadas,
-  zoom: 3,
-  mapTypeControlOptions: {
-    mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain', 'style_map']
-  }
-  
-};
-
-var map;
-
 function iniciarMapa() {
+
+  var map;
+
+  var coordenadas = {
+    lat: 21.152639,
+    lng: -101.711598,
+  };
+
+  var propiedades = {
+    center: coordenadas,
+    zoom: 3,
+    mapTypeControlOptions: {
+      mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain', 'style_map']
+    }
+  };
 
   var styledMap = new google.maps.StyledMapType([
     [
