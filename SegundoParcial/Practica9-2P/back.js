@@ -16,7 +16,6 @@ function iniciarMapa() {
   };
 
   var styledMap = new google.maps.StyledMapType([
-    [
       {
         elementType: 'geometry',
         stylers: [
@@ -201,7 +200,6 @@ function iniciarMapa() {
           }
         ]
       }
-    ]
   ], { name: "Mapa oscuro" });
 
   var map = new google.maps.Map(document.getElementById("mapa"), propiedades);
