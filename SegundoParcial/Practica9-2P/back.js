@@ -26,7 +26,7 @@ function iniciarMapa() {
         ]
       },
       {
-        elementType: "labels.icon",
+        elementType: 'labels.icon',
         stylers: [
           {
             "visibility": "off"
@@ -204,11 +204,12 @@ function iniciarMapa() {
     ]
   ], { name: "Mapa oscuro" });
 
+  map.mapTypes.set("style_map", styledMap);
+  map.setMapTypeId('style_map');
 
   var map = new google.maps.Map(document.getElementById("mapa"), propiedades);
 
-  map.mapTypes.set("style_map", styledMap);
-  map.setMapTypeId('style_map');
+ 
 
 
 }
