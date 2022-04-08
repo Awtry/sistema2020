@@ -7,8 +7,10 @@ var coordenadas = {
 var propiedades = {
   center: coordenadas,
   zoom: 3,
-  //TODO: Falta agregar un faltante aquií
-  mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain', 'style_map']
+  mapTypeControlOptions: {
+    mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain', 'style_map']
+  }
+  
 };
 
 var map;
