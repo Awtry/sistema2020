@@ -2,6 +2,8 @@ function iniciarMapa() {
   var coordenadas = { lat: 21.152639, lng: -101.711598}
   var propiedades1 = {center: coordenadas, zoom: 12}
   var propiedades2 = {center: coordenadas, zoom: 12, disableDefaultUI: true}
+  var propiedades3 = {center: coordenadas, zoom: 12, zoomControl: false, scaleControl: false}
+  var propiedades4 = {center: coordenadas, zoom: 12, mapTypeControl: true, mapTypeControlOption: {style: google.maps.mapTypeControlStyle.DROPDONW_MENU, mapTypeIds: ['roadmap', 'satellite', 'terrain']}}
 
   var map1 = new google.maps.Map(document.getElementById('map1'), propiedades1);
 
