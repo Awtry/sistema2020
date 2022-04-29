@@ -35,4 +35,43 @@ function iniciarMapa() {
     infowindow.setContent('Zoom'+nivelZoom);
   })
 
+  var map4 = new google.maps.Map(document.getElementById('map4'), propiedades);
+ 
+  map4.addListener('click', function(e){
+    console.log(e.latLng);
+    estableceMarcador(e.latLng);
+  });
+
+  function estableceMarcador(latLng){
+    var marker = new google.maps.Marker({
+      position: latLng,
+      map:map4
+    });
+    map4.panTo(latLng);
+  }
+
+  var map5 = new google.maps.Map(document.getElementById('map5'), propiedades);
+  var infowindow = new google.maps.InfoWindow({
+    content: 'Haz click para ver las coordenadas',
+    position: coordenadas
+  });
+
+  infowindow.open(map5);
+  map5.addListener('click', function(evento){
+    infowindow.close();
+    infowindow = new google.maps.InfoWindow({position: evento.latLng});
+    infowindow.setContent(evento.latLng.toString());
+    infowindow.open(map5);
+  });
+
+  var map6 = new google.maps.Map(document.getElementById('map6'), propiedades);
+  google.maps.event.addDomListener(map6, 'click', function(){
+    window.alert('Se hizo click en el mapa');
+  });
+
+  var boton = document.getElementById('btnCentrar');
+  google.maps.event.addDomListener(boton, 'click', function(){
+       map6.panTo(coordenadas);
+  });
+
 }

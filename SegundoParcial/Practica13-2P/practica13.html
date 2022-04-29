@@ -40,58 +40,33 @@
           </h5>
         </div>
         <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10">
-          <h1>Opciones de mapa</h1>
+          <h1>Places por ubicación</h1>
         </div>
       </div>
     </div>
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
           <div class="container">
             <div class="row">
-              <div class="container">
-                <div id="map1"></div>
-                <p>Mapa con controles estándar</p>
-              </div>
-
-              <div class="container">
-                <div id="map2"></div>
-                <p>Mapa sin controles</p>
-              </div>
-              
-              <div class="container">
-                <div id="map3"></div>
-                <p>Mapa con zoom desactivado</p>
-              </div>
-        
-              <div class="container">
-                <div id="map4"></div>
-                <p>Mapa con ControlOptions</p>
-              </div>
-
-              <div class="container">
-                <div id="map5"></div>
-                <p>Mapa con ControlOptions</p>
-              </div>
-
-              <div class="container">
-                <div id="map6"></div>
-                <p>Mapa con restricción de movimiento</p>
-              </div>
-
-              <div class="container">
-                <div id="map7"></div>
-                <p>Mapa de 45º</p>
-              </div>
-            
+              <select namne="tipo" id="tipo" class="form-control">
+                <option value="atm">Cajero automatico</option>
+                <option value="dentist">Dentista</option>
+                <option value="clothing_store">Tienda de ropa</option>
+                <option value="store">Tienda</option>
+              </select>
+              <ul id="placesList"></ul>
             </div>
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
           <div class="container">
             <div class="row">
-             <h2>Aquí debe de ir la practica 12</h2>
+              <div class="container">
+                <div id="map"></div>
+                <p>Mapa con controles estándar</p>
+              </div>
             </div>
           </div>
         </div>
@@ -119,7 +94,7 @@
     <!-- MAPA-->
 
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMrQgga-C5zCuZLTVk2MPVzX7naqKZXZU&callback=iniciarMapa"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMrQgga-C5zCuZLTVk2MPVzX7naqKZXZU&libraries=places&callback=iniciarMapa"
       async
       defer
     ></script>
