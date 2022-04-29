@@ -7,7 +7,7 @@ function iniciarMapa() {
     position: coordenadas,
     map: map1
   })
-  marker.addEventListener('click', function(){
+  marker.addListener('click', function(){
     map1.setZoom(8);
     map1.setCenter(marker.getPosition());
   })
@@ -17,7 +17,7 @@ function iniciarMapa() {
     position: coordenadas,
     map: map2
   })
-  marker.addEventListener('center_changed', function(){
+  marker.addListener('center_changed', function(){
     window.setTimeout( function(){
       map2.panTo(marker2.getPosition());
     }, 3000)
